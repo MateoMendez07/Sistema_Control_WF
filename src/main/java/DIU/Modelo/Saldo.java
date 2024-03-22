@@ -11,20 +11,20 @@ import java.math.BigDecimal;
  * @author tutut
  */
 public class Saldo {
-    private BigDecimal saldoTotal;
+    private double saldoTotal;
     
     public Saldo(){
     }
 
-    public Saldo(BigDecimal saldoTotal) {
+    public Saldo(double saldoTotal) {
         this.saldoTotal = saldoTotal;
     }
 
-    public BigDecimal getSaldoTotal() {
+    public Double getSaldoTotal() {
         return saldoTotal;
     }
 
-    public void setSaldoTotal(BigDecimal saldoTotal) {
+    public void setSaldoTotal(double saldoTotal) {
         this.saldoTotal = saldoTotal;
     }
     

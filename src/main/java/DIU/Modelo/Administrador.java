@@ -9,24 +9,15 @@ package DIU.Modelo;
  * @author tutut
  */
 public class Administrador {
-    private int id;
+
     private String nombreUsuario;
     private String contraseña;
 
     public Administrador(){
     }
-    public Administrador(int id, String nombreUsuario, String contraseña) {
-        this.id = id;
+    public Administrador(String nombreUsuario, String contraseña) {
         this.nombreUsuario = nombreUsuario;
         this.contraseña = contraseña;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNombreUsuario() {

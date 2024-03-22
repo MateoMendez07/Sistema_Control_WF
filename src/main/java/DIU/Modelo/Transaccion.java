@@ -5,6 +5,7 @@
 package DIU.Modelo;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 /**
@@ -14,19 +15,19 @@ import java.time.LocalDateTime;
 public class Transaccion {
     private int id;
     private String tipo;
-    private BigDecimal monto;
-    private LocalDateTime fechaHora;
+    private double monto;
+    private LocalDate fecha;
     private String descripcion;
     private Administrador administrador;
     
     public Transaccion(){
     }
 
-    public Transaccion(int id, String tipo, BigDecimal monto, LocalDateTime fechaHora, String descripcion, Administrador administrador) {
+    public Transaccion(int id, String tipo, double monto, LocalDate fecha, String descripcion, Administrador administrador) {
         this.id = id;
         this.tipo = tipo;
         this.monto = monto;
-        this.fechaHora = fechaHora;
+        this.fecha = fecha;
         this.descripcion = descripcion;
         this.administrador = administrador;
     }
@@ -47,20 +48,20 @@ public class Transaccion {
         this.tipo = tipo;
     }
 
-    public BigDecimal getMonto() {
+    public Double getMonto() {
         return monto;
     }
 
-    public void setMonto(BigDecimal monto) {
+    public void setMonto(Double monto) {
         this.monto = monto;
     }
 
-    public LocalDateTime getFechaHora() {
-        return fechaHora;
+    public LocalDate getFecha() {
+        return fecha;
     }
 
-    public void setFechaHora(LocalDateTime fechaHora) {
-        this.fechaHora = fechaHora;
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
     }
 
     public String getDescripcion() {

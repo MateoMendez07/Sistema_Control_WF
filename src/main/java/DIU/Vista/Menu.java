@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package DIU.Vista;
-
+import DIU.Vista.Registro;
 /**
  *
  * @author tutut
@@ -15,6 +15,7 @@ public class Menu extends javax.swing.JFrame {
      */
     public Menu() {
         initComponents();
+        
     }
 
     /**
