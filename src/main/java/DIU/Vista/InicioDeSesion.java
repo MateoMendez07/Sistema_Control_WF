@@ -49,7 +49,7 @@ public class InicioDeSesion extends javax.swing.JFrame {
         jLabel4.setText("USUARIO");
 
         txtCorreo.setForeground(new java.awt.Color(102, 102, 102));
-        txtCorreo.setText("Ingrese su correo electrónico");
+        txtCorreo.setText("Ingrese su usuario");
         txtCorreo.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(102, 102, 102)));
         txtCorreo.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -57,6 +57,11 @@ public class InicioDeSesion extends javax.swing.JFrame {
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
                 txtCorreoFocusLost(evt);
+            }
+        });
+        txtCorreo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCorreoActionPerformed(evt);
             }
         });
 
@@ -68,7 +73,7 @@ public class InicioDeSesion extends javax.swing.JFrame {
         txtContrasenia.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(102, 102, 102)));
         txtContrasenia.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
-        btnAcceder.setText("Ingresar");
+        btnAcceder.setText("Iniciar sesión");
         btnAcceder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAccederActionPerformed(evt);
@@ -161,6 +166,10 @@ public class InicioDeSesion extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, "Correo o contraseña incorrectos", "Error de inicio de sesión", JOptionPane.ERROR_MESSAGE);
     }
     }//GEN-LAST:event_btnAccederActionPerformed
+
+    private void txtCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCorreoActionPerformed
 
     /**
      * @param args the command line arguments

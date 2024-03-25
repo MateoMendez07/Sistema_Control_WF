@@ -8,7 +8,7 @@ package DIU.Vista;
  *
  * @author tutut
  */
-public class Main {
+public class Sistema_Wiphala {
     public static void main(String[] args) {
         InicioDeSesion.main(args); 
     }
